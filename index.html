@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>メンテナンス中</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #f8fafc;
+      --sub: #94a3b8;
+      --accent: #3b82f6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background:
+        radial-gradient(circle at top, #1e3a8a 0%, var(--bg) 50%);
+      font-family:
+        "BIZ UDPGothic",
+        "Yu Gothic",
+        "Hiragino Sans",
+        sans-serif;
+      color: var(--text);
+      padding: 24px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 640px;
+      text-align: center;
+      background: rgba(30, 41, 59, 0.85);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(148, 163, 184, 0.2);
+      border-radius: 24px;
+      padding: 48px 32px;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    }
+
+    .icon {
+      font-size: 64px;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin: 16px 0;
+      line-height: 1.8;
+      color: var(--sub);
+    }
+
+    .status {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 8px 16px;
+      border-radius: 9999px;
+      background: rgba(59, 130, 246, 0.15);
+      color: #93c5fd;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+
+    footer {
+      margin-top: 32px;
+      font-size: 0.875rem;
+      color: var(--sub);
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="icon">🔧</div>
+
+    <h1>ただいまメンテナンス中です</h1>
+
+    <p>
+      サービス向上のため、現在システムメンテナンスを実施しております。<br />
+      ご利用の皆さまにはご不便をおかけしますが、復旧まで今しばらくお待ちください。
+    </p>
+
+    <div class="status">
+      Maintenance In Progress
+    </div>
+
+    <footer>
+      © 株式会社ディジテック
+    </footer>
+  </main>
+</body>
+</html>
